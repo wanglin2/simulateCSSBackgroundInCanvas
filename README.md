@@ -1,0 +1,2 @@
+# simulateCSSBackgroundInCanvas
+在canvas中模拟css的background相关样式
