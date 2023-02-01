@@ -278,7 +278,8 @@ const drawBackgroundImageToCanvas = (
   width,
   height,
   img,
-  { backgroundSize, backgroundPosition, backgroundRepeat }
+  { backgroundSize, backgroundPosition, backgroundRepeat },
+  callback = () => {}
 ) => {
   // 画布的长宽比
   let canvasRatio = width / height
@@ -342,6 +343,11 @@ const drawBackgroundImageToCanvas = (
     if (!notNeedDraw) {
       drawImage(ctx, image, drawOpt)
     }
+
+    callback()
+  }
+  image.onerror = e => {
+    callback(e)
   }
 }
 
