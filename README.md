@@ -17,5 +17,11 @@ drawBackgroundImageToCanvas(ctx, width, height, img, {
   backgroundRepeat: 'repeat-y',
   backgroundSize: '60%',
   backgroundPosition: 'center center'
+}, (err) => {
+  if (err) {
+    // 失败
+  } else {
+    // 成功
+  }
 })
 ```
