@@ -5,7 +5,7 @@
 ## 使用
 
 ```js
-import drawBackgroundImageToCanvas from './SimulateCSSBackgroundInCanvas'
+import drawBackgroundImageToCanvas from './index.js'
 
 let width = 500
 let height = 500
